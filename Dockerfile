@@ -4,7 +4,9 @@ WORKDIR /app
 
 ADD vectorizer.pkl model.pkl app.py ./
 
-RUN pip install streamlit nltk sklearn
+
+
+RUN pip install -r requirements.txt
 
 EXPOSE 8501
 
